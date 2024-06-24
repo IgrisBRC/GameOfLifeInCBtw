@@ -114,7 +114,7 @@ _Bool **init() {
   _Bool **arr;
   arr = (_Bool **)malloc(sizeof(_Bool *) * LEN);
   for (int i = 0; i < LEN; i++) {
-    arr[i] = malloc(sizeof(_Bool) * BRE);
+    arr[i] = (_Bool*)malloc(sizeof(_Bool) * BRE);
   }
 
   for (int i = 0; i < LEN; i++) {
